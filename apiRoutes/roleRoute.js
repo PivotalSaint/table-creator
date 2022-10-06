@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db/connect');
 
-router.get('/role', (req, res) => {
+router.get('/employeeRole', (req, res) => {
   const sql = `SELECT * FROM parties`;
 
   db.query(sql, (err, rows) => {
@@ -17,8 +17,8 @@ router.get('/role', (req, res) => {
   });
 });
 
-router.get('/party/:id', (req, res) => {
-  const sql = `SELECT * FROM parties WHERE id = ?`;
+router.get('/employeeRole/:id', (req, res) => {
+  const sql = `SELECT * FROM employeeRole WHERE id = ?`;
   const params = [req.params.id];
 
   db.query(sql, params, (err, row) => {
@@ -33,7 +33,7 @@ router.get('/party/:id', (req, res) => {
   });
 });
 
-router.delete('/party/:id', (req, res) => {
+router.delete('/employeeRole/:id', (req, res) => {
   const sql = `DELETE FROM parties WHERE id = ?`;
 
   db.query(sql, req.params.id, (err, result) => {
@@ -41,7 +41,7 @@ router.delete('/party/:id', (req, res) => {
       res.status(400).json({ error: res.message });
     } else if (!result.affectedRows) {
       res.json({
-        message: 'Party not found'
+        message: 'Role not found'
       });
     } else {
       res.json({

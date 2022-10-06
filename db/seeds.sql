@@ -7,24 +7,33 @@ VALUES
 ('Technology'),
 ('Management');
 
-INSERT INTO employee (last_name, first_name, department_id)
+INSERT INTO employeeRole (department, departmentSalary)
 VALUES
-('Rodriguez','Benny', null),
-('Smalls','Scott', null),
-('Porter','Ham', null),
-('Yeah-Yeah','McClennen', null),
-('DeNunez','Kenny', null),
-('Palledorous','Micahel-Squints', null),
-('Weeks','Grover', 2),
-('Timmons','Timmy', null),
-('Timmons','Tommy-Repeat', null),
-('Peffercorn','Wendy', null),
-('Bambino','The-Great', null);
+(1, '$45,000.00'),
+(2, '$50,000.00'),
+(3, '$55,000.00'),
+(4, '$40,000.00'),
+(5, '$60,000.00'),
+(6, '$80,000.00');
+
+INSERT INTO employee (last_name, first_name, department_id, manager)
+VALUES
+('Rodriguez','Benny', NULL, NULL),
+('Smalls','Scott', NULL, NULL),
+('Porter','Ham', NULL, NULL),
+('Yeah-Yeah','McClennen', NULL, NULL),
+('DeNunez','Kenny', NULL, NULL),
+('Palledorous','Micahel-Squints', NULL),
+('Weeks','Grover', NULL, NULL),
+('Timmons','Timmy', NULL, NULL),
+('Timmons','Tommy-Repeat', NULL, NULL),
+('Peffercorn','Wendy', NULL, NULL),
+('Bambino','The-Great', NULL, NULL);
 
 INSERT INTO manager (last_name, first_name, department_id)
 VALUES
-('Judge','Aaron', 6),
-('','', 6),
-('','', 6),
-('','', 6),
-('','', 6);
+('Judge','Aaron', NULL),
+('Ruth','Babe', NULL),
+('Marris','Roger', NULL),
+('Robinson','Jackie', NULL),
+('Clemente','Roberto', NULL);
