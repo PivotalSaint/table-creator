@@ -1,9 +1,11 @@
 # table-creator
 
 # Author: Jesse Van Winkle
+**Github Dashboard**
+[https://github.com/PivotalSaint/table-creator]
 
 ## Screencastify for Project
-
+    There is none, hope to resubmit.
 
 # User Story:
     AS A business owner
@@ -31,5 +33,6 @@
     THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
 ## Screenshot of Application:
-![img]
+![img] There is none.
+
 
