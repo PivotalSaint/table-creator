@@ -1,4 +1,4 @@
-INSERT INTO department (deptArea)
+INSERT INTO department (description)
 VALUES
 ('Human-Resources'),
 ('Merchandising'),

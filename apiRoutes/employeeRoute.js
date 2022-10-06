@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../db/connect');
-const inputCheck = require('../../utils/inputCheck');
+const db = require('../db/connect');
+const inputCheck = require('../utils/inputCheck');
 
 router.get('/employee', (req, res) => {
     const sql = `SELECT * FROM employee ORDER BY last_name`;
