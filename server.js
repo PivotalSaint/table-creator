@@ -1,8 +1,8 @@
 const express = require('express');
 const db = require('./db/connect');
-const apiRoutes = require('./routes/apiRoutes');
+const apiRoutes = require('./apiRoutes');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3040;
 const app = express();
 
 // Express middleware

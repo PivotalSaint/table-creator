@@ -9,17 +9,17 @@ VALUES
 
 INSERT INTO employee (last_name, first_name, department_id)
 VALUES
-('Rodriguez','Benny', 3),
-('Smalls','Scott', 2),
-('Porter','Ham', 4),
-('Yeah-Yeah','McClennen', 4),
-('DeNunez','Kenny', 5),
-('Palledorous','Micahel-Squints', 2),
+('Rodriguez','Benny', null),
+('Smalls','Scott', null),
+('Porter','Ham', null),
+('Yeah-Yeah','McClennen', null),
+('DeNunez','Kenny', null),
+('Palledorous','Micahel-Squints', null),
 ('Weeks','Grover', 2),
-('Timmons','Timmy', 5),
-('Timmons','Tommy-Repeat', 5),
-('Peffercorn','Wendy', 1),
-('Bambino','The-Great', 3);
+('Timmons','Timmy', null),
+('Timmons','Tommy-Repeat', null),
+('Peffercorn','Wendy', null),
+('Bambino','The-Great', null);
 
 INSERT INTO manager (last_name, first_name, department_id)
 VALUES

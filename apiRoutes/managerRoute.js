@@ -1,5 +1,4 @@
 const express = require('express');
-const { route } = require('.');
 const router = express.Router();
 const db = require('../../db/connect');
 const inputCheck = require('../../utils/inputCheck');
