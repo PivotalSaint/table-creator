@@ -4,6 +4,7 @@ const db = require('./db/connect.js');
 const apiRoutes = require('./apiRoutes');
 
 const PORT = process.env.PORT || 3040;
+const app = express();
 
 const promptBuilder = () => {
   return inquirer.prompt([
@@ -25,5 +26,3 @@ db.connect(err => {
     console.log(`Server running on port ${PORT}`);
   });
 });
-
-promptBuilder();

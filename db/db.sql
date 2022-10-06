@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS teamBuilder;
-CREATE DATABASE teamBuilder;
-USE teamBuilder;
+DROP DATABASE IF EXISTS teambuilder;
+CREATE DATABASE teambuilder;
+USE teambuilder;
